@@ -1,0 +1,41 @@
+
+body{ 
+  background-image: url('cloudimg.jpeg'); 
+  padding: 60px;
+  text-align: left;
+  
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ line-height: 1.6rem;
+}
+
+.accordian{
+  background-color: rgb(227, 219, 231);
+ padding: 4px 16px;
+ margin: 16px;
+border-radius: 4px;
+box-shadow: 1px 1px 5px rgb(209, 141, 210);
+cursor: pointer;
+}
+.question{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon{
+  margin: 16px;
+  transition: transform 0.2s;
+}
+.icon.active{
+transform: rotate(180deg);
+
+}
+.answer{
+  padding: 2px;
+  color: #777;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+/* we can also do this with scroll height concept which is not present in css but in js*/
+
+ 
